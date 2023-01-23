@@ -14,7 +14,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    height: 151px;
+    height: 140px;
 
 }
 
@@ -23,34 +23,43 @@ header {
     margin-left: 5%;
 }
 
-#navBar {
+#nav-bar {
     margin-left: 5%;
     height:auto;
     display: flex;
     flex-direction: row;
+    position: absolute;
+    bottom: 0;
 }
 
-#navBar span:not(:first-child) {
+#nav-bar span:not(:first-child) {
     border-left: 1px solid #000;
 }
 
-#navBar button.nav {
-    display: inline-block;
+#nav-bar .nav {
+    display: inline-flex;
     background-color: #80926a;
     border: none;
     padding: 20px;
-    padding-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: auto;
     font-size: large;
+    justify-content: center;
+    align-items: center;
     
+}
+
+header #nav-bar .nav.on-page {
+    background-color: #6c7e56;
 }
 
 #main {
     display: block;
-    width: 50%;
+    width: 66%;
     height: 70vh;
     background-color: #c4ca96;
-    padding-top: max(16.6vh, 151px);
+    padding-top: max(16.6vh, 140px);
     padding-bottom: 10vh;
     margin: auto;
     margin-bottom: 0%;
@@ -70,15 +79,17 @@ main div {
     border-collapse: collapse;
     border-spacing: 10px 0;
 }
+
 #other-links table th, #other-links table td {
     border: 1px solid #000;
     padding: 10px;
 }
+
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #607a97;
+    background-color: #56708d;
     height: 150px;
 }
 

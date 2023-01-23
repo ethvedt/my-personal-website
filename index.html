@@ -10,9 +10,9 @@
             <h1>Eric Thvedt</h1>
             <h2>Scientist and Software Engineer (hopefully)</h2>
         </div>
-        <div id="navBar">
+        <div id="nav-bar">
             <span>
-                <button type="button" class="nav" onclick="displayContent(event)">Home Page</button>
+                <button type="button" class="nav" id="home-nav" onclick="displayContent(event)">Home Page</button>
             </span>
             <span>
                 <button type="button" class="nav" onclick="displayContent(event)">Biography</button>
@@ -127,8 +127,8 @@
                 <h3>Get in touch</h3>
                 <ul>
                     <li>Phone:(123)456-7890</li>
-                    <li><button type="button" id="email">Email me!</button></li>
-                    <li><button type="button" id="mail">Snail mail me!</button></li>
+                    <li><button type="button" id="email" onclick="emailButton()">Email me!</button></li>
+                    <li><button type="button" id="mail" onclick="mailButton()">Snail mail me!</button></li>
                 </ul>
             </span>
             <span>
