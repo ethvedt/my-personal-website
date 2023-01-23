@@ -1,3 +1,87 @@
 body {
-    background-color: rgb(168, 168, 233);
+    background-color: #2c373a;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    min-height: 100vh;
 }
+
+header {
+    background-color: #80926a;
+    font-size: larger;
+    font-weight: bolder;
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 200px;
+}
+
+.header-push {
+    padding: 5px;
+}
+#navBar span:not(:first-child) {
+    border-left: 1px solid #000;
+}
+
+#navBar button.nav {
+    display: inline-block;
+    background-color: #80926a;
+    border: none;
+    padding: 20px;
+    padding-top: 0;
+    width: auto;
+    font-size: large;
+    
+}
+
+main {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: #c4ca96;
+    padding-top: 200px;
+    padding-bottom: 9rem;
+    align-items: center;
+    margin: auto;
+}
+
+.content {
+    display: block;
+}
+
+main div {
+    padding-left: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #607a97;
+    height: 9rem;
+}
+
+
+#footer-stuff span {
+    float: left;
+    margin-left: 20%;
+    width: 25%;
+    line-height: 0.5rem;
+    font-size: 16px;
+}
+
+#footer #footer-stuff ul {
+    line-height: 1rem;
+}
+
+#footer button {
+    border: none;
+    font-size: 16px;
+}
+
+#footer #copyright {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+

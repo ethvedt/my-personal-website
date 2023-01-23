@@ -6,21 +6,38 @@
   </head>
   <body>
     <header>
-        <h1>Eric Thvedt</h1>
-        <h2>Scientist and Software Engineer (hopefully)</h2>
-        <div>
-            <span>Biography</span>
-            <span>Current Projects</span>
-            <span>Curriculum Vitae</span>
-            <span>Other Links</span>
+        <div id="title">
+            <h1>Eric Thvedt</h1>
+            <h2>Scientist and Software Engineer (hopefully)</h2>
+        </div>
+        <div id="navBar">
+            <span>
+                <button type="button" class="nav" onclick="displayContent(event)">Home Page</button>
+            </span>
+            <span>
+                <button type="button" class="nav" onclick="displayContent(event)">Biography</button>
+            </span>
+            <span>
+                <button type="button" class="nav" onclick="displayContent(event)">Current Projects</button>
+            </span>
+            <span>
+                <button type="button" class="nav" onclick="displayContent(event)">Curriculum Vitae</button>
+            </span>
+            <span>
+                <button type="button" class="nav" onclick="displayContent(event)">Other Links</button>
+            </span>
         </div>
     </header>
     <main>
-        <div id="biography">
+        <div class="content" id="home-page">
+            <h3> Welcome to my Site!</h3>
+            <p>I hope you enjoy your time here. This is just the start of a wonderful adventure.</p>
+        </div>
+        <div class="content" id="biography">
             <h3>My Personal Story</h3>
             <p>Lorem ipsum... It all started when I was three. Doug down at the weigh station wouldn't stop asking to borrow my pickup truck to help his brother move back into town. It got me thinking, "Where do I fit in in all of this? Who am I? Are we human or are we dancer?" I couldn't find the answer in Kansas, so I had to relocate to San Diego and change my career to software engineering.</p>
         </div>
-        <div id="currentProjects">
+        <div class="content" id="current-projects">
             <h3> My Ongoing Projects</h3>
             <ul>
                 <li>Project 1</li>
@@ -30,7 +47,7 @@
                 <li><em>This Website</em></li>
             </ul>
         </div>
-        <div id="curriculumVitae">
+        <div class="content" id="curriculum-vitae">
             <div class="cv" id="education">
                 <h3>Education</h3>
                 <div>
@@ -77,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div id="otherLinks">
+        <div class="content" id="other-links">
             <h3>Some sites you might find useful</h3>
             <table>
                 <tr>
@@ -105,6 +122,7 @@
     </main>
     <footer>
         <div id="footer">
+            <div id="footer-stuff">
             <span>
                 <h3>Get in touch</h3>
                 <ul>
@@ -119,7 +137,8 @@
                 <p>Another link here!</p>
                 <p>Maybe a third link here?</p>
             </span>
-            <div>
+            </div>
+            <div id="copyright">
                 <p>Created by Eric Thvedt. <span>&copy</span> 2023</p>
             </div>
         </div>
